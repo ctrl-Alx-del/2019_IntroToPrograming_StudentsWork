@@ -54,7 +54,7 @@ class Ship {
     //igen når fra slutningen af arrayet til starten af det. Det kan man se ved at sætte frameRate(1). Derfor kommer der et trail efter.
 
     for (int i = 0; i < triX.length; i++) {
-      fill(fullColor, 0, 0);
+      fill(fullColor, 0, 0, triX[i]/2); //Her tager man værdierne sat ind på arrayets pladser og dividere dem med 2 for at gøre hver triangel svagere i farve og mere tydeligt.
       triangle(triX[i]-fireRedEven, triY[i]+fireEven, triX[i], triY[i]+fireRedY2, triX[i]+fireRedEven, triY[i]+fireEven);
     }                                                                                                                     
     fill(yellow);                                                                                                         
